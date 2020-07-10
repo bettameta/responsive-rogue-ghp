@@ -1,0 +1,305 @@
+/***  BASE STYLE HTML  ***/
+/*** BASED ON PHONE SPECS  ***/
+
+html{
+	font-size: 16px;
+
+}
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 15px;
+  
+}
+
+.container{
+	max-width: 1200px;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	flex-grow: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h1 {
+	font-size: 1.875em;
+	
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+	font-size: 1.125em;
+}
+h4 {
+	font-size: .75em;
+}
+
+p {
+	font-size: .875em;
+	line-height: 1.3em;
+
+    padding: 0 30px;
+}
+
+/*The widths are in a percentage!*/
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: wrap;
+	
+
+  
+}
+
+header h1 {
+	width: 100%;
+	margin: 0;
+	padding: 25px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+border-bottom: solid 3px #77a466;
+border-width: initial;	
+}
+
+header h1 span {
+	color: #77a466;
+margin: 0 10px;
+}
+
+header nav {
+	
+	padding: 0px 0;	
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: .875em;
+	padding: 0 10px;
+	display: inline;
+}
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*The widths are in a percentage!*/
+.top-section,
+.bottom-section {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+
+}
+
+.main-image {
+	height: 100%;
+	
+
+}
+.main-image img {
+width: 100%;
+	border-top: 3px solid #77a466;
+	border-bottom: 3px solid #77a466;
+}
+
+.main-title {
+	height: auto;
+	
+}
+.main-title h3 {
+	text-align: left;
+	padding: 5px 0;
+	color: #77a466;
+}
+.main-title p {
+	padding: 0;
+	font-size: 1em;
+
+}
+
+.section-one,
+.section-two,
+.section-three {
+	width: 100%;
+	height: auto;
+	border-top: 1px solid #eee;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+
+
+}
+
+.section-one h4 {
+	padding: 5px 0;
+}
+
+
+
+.section-two h4,
+.section-three h4 {
+	padding: 10px 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+}
+.menu li {
+	padding: 5px 0;
+	color:#77a466;
+}
+
+.reviews {
+	color: #333;
+	font-size: 1em;
+line-height: 1.5em;
+	
+}
+
+.address {
+	font-size: 1em;
+line-height: 1.5em;
+	
+}
+
+/*The widths are in a percentage!*/
+footer {
+	border-top: 3px solid #eee;
+	margin: 0 auto;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+footer span {
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: .875em;
+}
+
+
+/***  MEDIA QUERRIES  ***/
+/***  BASED ON VALUES FOR A PHONE @ 360PX  ***/
+@media (max-width: 767px){
+	
+	
+	h1 span{
+		padding: 0;
+	}
+	
+}
+
+/***  BASED ON VALUES FOR TABLETS ***/
+@media (min-width: 768px) and (max-width: 1200px){
+	
+
+	header nav {
+	
+		padding: 0px 0;	
+	}
+
+	h1 span{
+		padding: 0;
+	}
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+
+	.bottom-section {
+		margin: 0 auto;
+	
+	}
+
+	.section-one,
+	.section-two,
+	.section-three {
+	width: 33.3%;
+	height: auto;
+	border-top: 1px solid #eee;
+	display: flex;
+	flex-grow: 1;
+	}
+}	
+
+
+/***  BASED ON VALUES FOR A DESKTOP OR TABLET ***/
+@media (min-width: 1201px){
+	header h1{
+		border-bottom: none;
+	}
+
+	.bottom-section {
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+
+	}
+
+	.section-one,
+	.section-two,
+	.section-three {
+	width: 33.3%;
+	height: auto;
+	border-top: 1px solid #eee;
+	
+	}
+
+	.section-one,
+	.section-two,
+	.section-three {
+	width: 33.3%;
+	height: auto;
+	border-top: 1px solid #eee;
+	display: flex;
+	justify-content: center;
+	flex-grow: 1;
+	}
+
+
+}
+
+	
+
+
+
+
+
