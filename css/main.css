@@ -67,14 +67,14 @@ header {
 }
 
 header h1 {
-	width: 100%;
 	margin: 0;
 	padding: 25px 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 border-bottom: solid 3px #77a466;
-border-width: initial;	
+border-width: 100%;	
+width: 100%;
 }
 
 header h1 span {
@@ -155,15 +155,11 @@ width: 100%;
 	align-items: center;
 	flex-direction: column;
 	
-
-
 }
 
 .section-one h4 {
 	padding: 5px 0;
 }
-
-
 
 .section-two h4,
 .section-three h4 {
@@ -204,6 +200,7 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
   }
 
 footer span {
@@ -214,23 +211,18 @@ footer span {
 }
 
 
-/***  MEDIA QUERRIES  ***/
-/***  BASED ON VALUES FOR A PHONE @ 360PX  ***/
-@media (max-width: 767px){
-	
-	
-	h1 span{
-		padding: 0;
-	}
-	
-}
+/***  MEDIA QUERIES  ***/
 
 /***  BASED ON VALUES FOR TABLETS ***/
-@media (min-width: 768px) and (max-width: 1200px){
+@media (min-width: 768px){
 	
-
+	header{
+		display:flex;
+		align-items: center;
+	
+	}
 	header nav {
-	
+		
 		padding: 0px 0;	
 	}
 
@@ -244,54 +236,79 @@ footer span {
 
 	.bottom-section {
 		margin: 0 auto;
-	
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		flex-direction: row;
 	}
 
 	.section-one,
 	.section-two,
 	.section-three {
-	width: 33.3%;
-	height: auto;
+	width: 33%;
+	
 	border-top: 1px solid #eee;
 	display: flex;
-	flex-grow: 1;
+	
 	}
 }	
 
 
-/***  BASED ON VALUES FOR A DESKTOP OR TABLET ***/
-@media (min-width: 1201px){
+/***  BASED ON VALUES FOR A DESKTOP OR LANDSCAPE PHONES AND TABLETS ***/
+@media (min-width: 1200px){
+
+	header{
+		justify-content: space-between;
+		width: 100%;
+	}
+	
 	header h1{
 		border-bottom: none;
+		width: 30%;
+		justify-content: flex-start;
 	}
+	
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
+		justify-content: end;
+		flex-direction: row;
+
+	  }
+
 
 	.bottom-section {
 		margin: 0 auto;
 		display: flex;
 		justify-content: center;
-		align-items: center;
-		flex-wrap: wrap;
+		align-items: flex-start;
+		flex-direction: row;
+	}
 
+	.section-two{
+		margin: 0;
+		padding: 0;
+	}
+	.section-two h4{
+		padding: 5px 0;
+		margin: 15px 0;
+	}
+
+	.section-three h4{
+		padding: 5px 0;
+		margin: 15px 0;
 	}
 
 	.section-one,
 	.section-two,
 	.section-three {
-	width: 33.3%;
-	height: auto;
-	border-top: 1px solid #eee;
+	width: 33%;
 	
-	}
-
-	.section-one,
-	.section-two,
-	.section-three {
-	width: 33.3%;
-	height: auto;
 	border-top: 1px solid #eee;
 	display: flex;
 	justify-content: center;
-	flex-grow: 1;
+	align-items: center;
+	
 	}
 
 
